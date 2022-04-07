@@ -19,5 +19,6 @@ To accomplish this test:
   - There is Vue component in resources/js/App.vue, from this component make a fetch to your endpoint to get all events
   - After getting the events use the same html vue template section to render the events with this structure (https://prnt.sc/s6RIUEGHpvHI)
   - Make each card clickable to redirect to its single page (Design of this page is not needed just the redirect)
+  - After everything is ready get a copy of your DB (your_db.sql) and include it in your commit then push the progress
 
 Event Grid Structure reference from https://www.eventbrite.es/
