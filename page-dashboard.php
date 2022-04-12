@@ -3,7 +3,7 @@
 get_header();
 ?>
 
-<div id="main-container" class="main-container container-fluid">
+<div id="main-container" class="main-container container-fluid" style="width:100%;">
 
     <div class="row dash-board-row">
 
