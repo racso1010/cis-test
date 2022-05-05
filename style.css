@@ -8,3 +8,8 @@ Author URI: https://crazyimagine.com/
 Text Domain: crazy-imagine-software
 Template: astra
 */
+
+
+body{
+  background-color: black;
+}

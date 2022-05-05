@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.esm.js\");\n/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App */ \"./resources/js/App.vue\");\n\n\nnew vue__WEBPACK_IMPORTED_MODULE_1__[\"default\"]({\n  el: \"#dashboardEl\",\n  name: \"Dashboard\",\n  render: h => h(_App__WEBPACK_IMPORTED_MODULE_0__[\"default\"])\n});\nconsole.log(\"Welcome to Crazy Imagine Software!\");\n\n//# sourceURL=webpack://crazy-imagine-test/./resources/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.esm.js\");\n/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App */ \"./resources/js/App.vue\");\n\n\nnew vue__WEBPACK_IMPORTED_MODULE_1__[\"default\"]({\n  el: '#dashboardEl',\n  name: 'Dashboard',\n  render: h => h(_App__WEBPACK_IMPORTED_MODULE_0__[\"default\"])\n});\nconsole.log('Welcome to Crazy Imagine Software!, I am Pedro');\n\n//# sourceURL=webpack://crazy-imagine-test/./resources/js/index.js?");
 
 /***/ }),
 

@@ -26,3 +26,42 @@ function theme_assets()
     );
 }
 add_action('wp_enqueue_scripts', 'theme_assets');
+
+/**
+ * Custom Post Type "Events"
+ */
+
+function cis_events_custom_post_type()
+{
+    $labels = [
+        'name' => 'Events',
+        'singular_name' => 'Event',
+        'menu_name' => 'Events',
+        'add_new' => "Add Event",
+        'edit_item' => "Edit Event",
+        'view_item' => "View Event",
+    ];
+
+    $args = [
+        'label'         => 'Events',
+        'description'   => 'Upcoming events of the Space Exploration Technologies Corporation (SpaceX)',
+        'labels'        => $labels,
+        'supports'      => ['title', 'editor', 'thumbnail', 'revisions'],
+        'public'        => true,
+        'show_in_menu'  => true,
+        'show_ui'       => true,
+        'menu_position' => 5,
+        'menu_icon'     => 'dashicons-airplane',
+        'can_export'    => true,
+        'publicly_queryable' => true,
+        'rewrite'       => ['slug' => 'event'],
+        'has_archive'   => true,
+        'hierarchical'  => false,
+        'show_in_rest'  => true,
+        'taxonomies'    => ['category'],
+    ];
+
+    register_post_type('event', $args);
+}
+
+add_action('init', 'cis_events_custom_post_type');
