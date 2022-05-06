@@ -10,6 +10,6 @@ Template: astra
 */
 
 
-body{
-  background-color: black;
+.main-container{
+  min-width: 100%;
 }

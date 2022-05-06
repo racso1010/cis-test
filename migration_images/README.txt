@@ -1,0 +1,1 @@
+por favor, copiar la carpeta "uploads" a la ruta de su wordpress "\wp-content"
