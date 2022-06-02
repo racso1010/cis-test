@@ -22,3 +22,12 @@ To accomplish this test:
   - After everything is ready get a copy of your DB (your_db.sql) and include it in your commit then push the progress
 
 Event Grid Structure reference from https://www.eventbrite.es/
+
+package.json add  
+
+"axios": "^0.27.2"
+"css-loader": "^6.7.1",
+"postcss-loader": "^7.0.0",
+
+-Copy upload in content
+-add new vue
