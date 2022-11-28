@@ -1,12 +1,12 @@
 <template>
   <!-- Dashboard View -->
   <div class="dashboard-view dash-view">
-    {{ hello }}, Welcome to Crazy Imagine Software!
+    {{ hello }}, Welcome to Crazy Imagine Software! 2
   </div>
 </template>
 
 <script>
-import axios from 'axios';
+import axios from "axios";
 export default {
   name: "App",
 
@@ -17,7 +17,10 @@ export default {
     };
   },
   mounted() {
-    axios.get('http://localhost.com/wp-json/luiscarreno/v1/eventos').then(response => { this.cards = response.data});
+    
+  },
+  created() {
+    axios.get('http://localhost/crazy/wp-json/luiscarreno/v1/eventos').then(response => { this.cards = response.data});
     console.log(this.cards);
   },
   created() {},
