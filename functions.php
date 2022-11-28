@@ -42,14 +42,10 @@ function events_custom_post_type() {
      */
     $supports = array(
         'title',        
-        'editor',       
-        'excerpt',      
+        'editor',            
         'author',       
         'thumbnail',    
-        'comments',     
-        'trackbacks',   
-        'revisions',    
-        'custom-fields' 
+
     );
 
     /*
@@ -90,7 +86,7 @@ add_action( 'rest_api_init', function () {
 
 	//array use in the WP_QUERY
 	$args = array(
-		'post_type' => 'Events',
+		'post_type' => 'Event',
 		'post_status' => 'publish',
 		'posts_per_page' => -1,
 	);
@@ -100,8 +96,8 @@ add_action( 'rest_api_init', function () {
 	$array_Events = array();
 
 	foreach($Events->posts as $Event){
-		array_push($array_Events,array('Image' => get_the_post_thumbnail_url($Event->ID),'content' => $Event->post_content,'title' => $Event->post_title, 'link' => get_permalink($Event->ID)));
+		array_push($array_Events,array('Image' => get_the_post_thumbnail_url($Event->ID),'content' => $Event->post_content,'title' => $Event->post_title, 'link' => get_permalink($Event->ID), 'date' => $Event->post_date));
 	}
 
-	return array($array_Events);
+	return $array_Events;
 }
