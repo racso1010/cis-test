@@ -17,11 +17,11 @@ export default {
     };
   },
   mounted() {
-    
-  },
-  created() {
     axios.get('http://localhost/crazy/wp-json/luiscarreno/v1/eventos').then(response => { this.cards = response.data});
     console.log(this.cards);
+  },
+  created() {
+    
   },
   methods: {},
 };
