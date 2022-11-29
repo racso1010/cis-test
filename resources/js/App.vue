@@ -63,5 +63,12 @@ border-radius: 20px;
 .date{
 color: rgb(255, 115, 0);
 font-weight: 600;
+margin-left: 10px;
+}
+.content{
+  margin-left: 10px;
+}
+.titulo{
+  margin-left: 10px;
 }
 </style>
