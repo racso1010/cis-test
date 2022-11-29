@@ -96,7 +96,9 @@ add_action( 'rest_api_init', function () {
 	$array_Events = array();
 
 	foreach($Events->posts as $Event){
-		array_push($array_Events,array('Image' => get_the_post_thumbnail_url($Event->ID),'content' => $Event->post_content,'title' => $Event->post_title, 'link' => get_permalink($Event->ID), 'date' => $Event->post_date));
+        
+        $postdate = date("l jS \of F Y h:i:s A", strtotime($Event->post_date));
+		array_push($array_Events,array('Image' => get_the_post_thumbnail_url($Event->ID),'content' => $Event->post_content,'title' => $Event->post_title, 'link' => get_permalink($Event->ID), 'date' => $postdate));
 	}
 
 	return $array_Events;
